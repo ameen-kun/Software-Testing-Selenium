@@ -1,0 +1,63 @@
+{
+  "id": "af10c902-ebe0-4136-8510-215d0b159c52",
+  "version": "2.0",
+  "name": "Task2",
+  "url": "https://demo.opencart.com",
+  "tests": [{
+    "id": "0485b33f-509e-46e5-a724-53dfbd805c5d",
+    "name": "Untitled",
+    "commands": [{
+      "id": "ffbc8f83-fe7f-4c49-8bce-1516a1642e44",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.opencart.com",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f08871df-a959-48dc-974c-e5685f637340",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-toggler",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5e094083-5c8c-4e8c-913b-6b186b01b1eb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Phones & PDAs",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ee54fe4-9d7d-47e4-a05c-51b3bb92aa51",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=HTC Touch HD",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "584dcf4a-46b0-4483-bfab-8ade70fe8fbd",
+      "comment": "",
+      "command": "store",
+      "target": "css=h1",
+      "targets": [],
+      "value": "t"
+    }, {
+      "id": "efa01082-f972-4bf4-b247-9805f35fb72b",
+      "comment": "",
+      "command": "echo",
+      "target": "${t}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "3142b2d8-c45e-4eea-819a-e5c178ef2f75",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0485b33f-509e-46e5-a724-53dfbd805c5d"]
+  }],
+  "urls": ["https://demo.opencart.com/"],
+  "plugins": []
+}

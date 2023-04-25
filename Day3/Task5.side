@@ -1,0 +1,87 @@
+{
+  "id": "74e4c9a0-7e99-4004-beff-244ed63bda67",
+  "version": "2.0",
+  "name": "Task5",
+  "url": "https://demo.opencart.com/index.php?route=checkout/voucher&language=en-gb",
+  "tests": [{
+    "id": "52f3ebcf-dfbe-4ca3-80ee-658012e791f8",
+    "name": "Task5",
+    "commands": [{
+      "id": "8c354997-75fa-47a8-85e4-b2bea39bf615",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.opencart.com/index.php?route=checkout/voucher&language=en-gb",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d64c757-2416-4ced-a1c9-eecb66b0e0f0",
+      "comment": "",
+      "command": "executeScript",
+      "target": "window.scroll(0,500)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "30cb4720-5659-400b-8ff1-e86f60d8db80",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=input-amount",
+      "targets": [
+        ["id=input-amount", "id"],
+        ["name=amount", "name"],
+        ["css=#input-amount", "css:finder"],
+        ["xpath=//input[@id='input-amount']", "xpath:attributes"],
+        ["xpath=//form[@id='form-voucher']/div[7]/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "acd68f77-de25-4c2b-82f9-633f2e095dd8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-check-label:nth-child(1)",
+      "targets": [
+        ["css=.form-check-label:nth-child(1)", "css:finder"],
+        ["xpath=//form[@id='form-voucher']/div[8]/div/div/label", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'I understand that gift certificates are non-refundable')]", "xpath:innerText"]
+      ],
+      "value": "I understand that gift certificates are non-refundable"
+    }, {
+      "id": "d8957d12-34d8-45b2-9997-99a8ebc94ab6",
+      "comment": "",
+      "command": "click",
+      "target": "name=agree",
+      "targets": [
+        ["name=agree", "name"],
+        ["css=.form-check-input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='agree']", "xpath:attributes"],
+        ["xpath=//form[@id='form-voucher']/div[8]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60be5131-5f25-4efe-bcaa-d7eb1cde4727",
+      "comment": "",
+      "command": "verifyChecked",
+      "target": "name=agree",
+      "targets": [
+        ["name=agree", "name"],
+        ["css=.form-check-input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='agree']", "xpath:attributes"],
+        ["xpath=//form[@id='form-voucher']/div[8]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "4e7bbc05-ed11-4296-a85f-92f858447148",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://demo.opencart.com/index.php?route=checkout/voucher&language=en-gb"],
+  "plugins": []
+}
