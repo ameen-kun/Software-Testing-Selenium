@@ -28,7 +28,7 @@ public class Task5_2 {
 		}
 		WebElement clothing=driver.findElement(By.xpath("//*[@id=\"Mod112\"]/div/div/ul/li[1]/a/img"));
 		clothing.click();
-		List<WebElement> li=driver.findElements(By.className("product-title"));
+		List<WebElement> li=driver.findElements(By.xpath("//h2[@class='product-title']"));
 		for(WebElement x:li) {
 			System.out.println(x.getText());
 		}
